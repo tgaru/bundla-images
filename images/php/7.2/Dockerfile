@@ -7,6 +7,7 @@ ENV APP_PATH /var/www/html
 RUN apk add --no-cache \
     supervisor \
     nano \
+    tmux \
     && pecl bundle -d /usr/src/php/ext redis \
     && rm /usr/src/php/ext/redis-*.tgz \
     && docker-php-ext-install \
