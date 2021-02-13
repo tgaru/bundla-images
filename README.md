@@ -8,6 +8,8 @@ Docker images for the project [Bundla](https://github.com/tgaru/bundla).
 
 * [ `tgaru/bundla-php:7.2` ](https://hub.docker.com/r/tgaru/bundla-php)
 
+* [ `tgaru/bundla-php:7.4` ](https://hub.docker.com/r/tgaru/bundla-php)
+
 ## Contributing
 Contributions are welcome! Leave an issue on Github, or create a Pull Request.
 
