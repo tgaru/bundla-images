@@ -12,6 +12,7 @@ RUN apk add --no-cache \
     && rm /usr/src/php/ext/redis-*.tgz \
     && docker-php-ext-install \
       $PHP_EXT_DEPS \
+      gmp \
       redis \
       sockets
 
