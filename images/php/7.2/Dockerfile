@@ -8,9 +8,12 @@ RUN apk add --no-cache \
     supervisor \
     nano \
     tmux \
+    libgmp-dev \
     && pecl bundle -d /usr/src/php/ext redis \
     && rm /usr/src/php/ext/redis-*.tgz \
-    && docker-php-ext-install \
+    && ln -s /usr/include/x86_64-linux-gnu/gmp.h /usr/include/gmp.h
+
+RUN docker-php-ext-install \
       $PHP_EXT_DEPS \
       gmp \
       redis \
